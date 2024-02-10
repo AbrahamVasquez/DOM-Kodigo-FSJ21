@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="gradient">
+    <!-- Navbar -->
+    <header class="position-fixed w-100">
+    <nav class="navbar navbar-expand-lg bg-dark p-1 fixed-top">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="Blocks-1s-200px.svg" alt="Logo" width="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="about.html" target="_blank">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Article / A brief description of the website -->
+    <article class="d-flex flex-column text-center">
+        <h1>A To-do List for everybody 📃</h1><br>
+        <p>Have you ever asked yourself about having a tool or something related for you to easily add your daily tasks or even a shopping list? Well, this is for you, allow to me to introduce you to the best place to have all of your tasks and ideas handy at all times!</p>
+    </article>
+
+    <article class="d-grid justify-content-sm-center mt-5">
+        <div class="card bg-secondary bg-gradient text-light col-sm-12 col-md-6 col-lg-3">
+            <img src="article1.jpg" class="card-img-top" alt="Imagine your ideas first">
+            <div class="card-body">
+              <h3 class="card-title">Start by creating  your ideas!</h3>
+              <p class="card-text"> It all starts from our mind so we can accomplish those tasks or goals.</p>
+              <a href="#myInput" class="btn btn-dark">Start Task</a>
+            </div>
+          </div>
+
+          <aside class="justify-content-sm-center mt-3 mb-3">
+            <div>
+              <p class="text-center"><span>You can change the background color here!</span></p>
+            </div>
+            <input class="color1" type="color" name="color1" value="#00ff00">
+	          <input class="color2" type="color" name="color2" value="#ff0000">
+            <button id="btn">Reset</button>
+          </aside>
+
+          <div class="card bg-secondary bg-gradient text-light col-sm-12 col-md-6 col-lg-4">
+            <img src="article2.jpg" class="card-img-top" alt="Start from the most important values">
+            <div class="card-body">
+              <h3 class="card-title">Write the most important values!</h3>
+              <p class="card-text">Try to always write the important values first so you can then left the rest for the end of your day.</p>
+              <a href="#myInput" class="btn btn-dark">Start Task</a>
+            </div>
+          </div>
+    </article>
+
+    <!-- Main list to add items/tasks -->
+    <main class="mt-5">
+        <h2 class="bg-black d-flex justify-content-center p-2">Let's start adding some tasks below!</h2>
+        <p class="text-center">(You can click on the item once you have completed it ✅)</p>
+
+            <!-- This will add the items we create -->
+            <div class="container d-flex justify-content-center"> 
+                <input type="text" id="myInput" placeholder="Add new items here">
+                <button id="addTaskButton" class="btn btn btn-info text-light m-1 p-2">Add Task</button>
+            </div><br>
+        
+        <div class="container d-flex justify-content-center bg-dark">
+            <ol id="taskList">
+                <!-- <li class="item">Chicken</li>
+                <li class="item">Rice</li>
+                <li class="item">Bananas</li>
+                <li class="item">Beans</li>
+                <li class="item">Vegetables</li> -->
+            </ol>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center text-light p-2">
+      <p>Created by Josh V. 2024</p>
+      <a href="https://github.com/AbrahamVasquez" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+      <a href="https://www.linkedin.com/in/abraham-vasquez-b97994209/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

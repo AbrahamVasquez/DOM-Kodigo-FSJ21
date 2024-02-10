@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caprasimo', serif;
+}
+
+/* Main Body which includes the color selectors */
+body {
+    font-size: 1.5rem;
+    background-color: rgb(195, 240, 240);
+    padding-top: 70px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(to right);
+
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+}
+
+/* Reset background color button */
+#btn {
+    width: 90px;
+    border-radius: 30px;
+    cursor: pointer;    
+    margin-bottom: 2px;
+    padding-top: 1px;
+}
+
+/* For devices that are smaller */
+@media only screen and (max-width: 600px) {
+    .card {
+        size: 0.5em;
+        padding: 0;
+        margin: 10px;
+    }
+ }
+
+ /* Add some style to the new items that will be added */
+h2, li {
+    color: aqua;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    width: 400px;
+    margin-bottom: 10px;
+
+}
+
+.card:hover {
+    transform: rotate(-3deg);
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+button:hover {
+    filter: brightness(110%);
+}  
+
+/* To add a line or mark tasks as completed will change to yellow */
+.line-cross {
+    text-decoration: line-through;
+    color: yellow;
+}
+
+  footer {
+    margin-top: 10rem;
+}
